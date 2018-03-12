@@ -6,15 +6,15 @@ function runner(\swoole_process $sub_process)
 //    $sub_process->exec("/usr/local/bin/php", [
 //        __DIR__ . '/help.php',
 //        'hello1',
-//        '>>/Users/zhgxun/Public/html/logs/out.txt',
-//        '2>>/Users/zhgxun/Public/html/logs/error.txt'
+//        '>>/Users/swoole/Public/html/logs/out.txt',
+//        '2>>/Users/swoole/Public/html/logs/error.txt'
 //    ]);
     $cmd = [
         '/usr/local/bin/php',
         __DIR__ . '/help.php',
         'hello1',
-        '>>/Users/zhgxun/Public/html/logs/out.txt',
-        '2>>/Users/zhgxun/Public/html/logs/error.txt'
+        '>>/Users/swoole/Public/html/logs/out.txt',
+        '2>>/Users/swoole/Public/html/logs/error.txt'
     ];
     $cmd = implode(" ", $cmd);
     passthru($cmd);
