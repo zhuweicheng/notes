@@ -24,3 +24,4 @@ func main() {
 	default:
 		fmt.Println(args)
 	}
+}
