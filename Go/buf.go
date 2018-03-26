@@ -76,6 +76,7 @@ func main() {
 	//	fmt.Fprintln(os.Stderr, "reading standard input:", err)
 	//}
 
+	
 	// 按单词分隔
 	const input2 = "Now is the winter of our discontent,\nMade glorious summer by this sun of York.\n"
 	scanner = bufio.NewScanner(strings.NewReader(input2))
